@@ -51,18 +51,12 @@ public class MainActivity extends AppCompatActivity implements ILoginView {
 
     public void toLogin(View view) {
 
-        int i=1;
-        if(i==0){
+
             HashMap<String,String> hashMap=new HashMap<>();
             hashMap.put("mobile",mobileEt.getText().toString());
             hashMap.put("password",pwdEt.getText().toString());
             loginPresenter.login(hashMap);
-        }else
-        {
 
-            startActivity(new Intent(this,ShopActivity.class));
-
-        }
 
     }
 
